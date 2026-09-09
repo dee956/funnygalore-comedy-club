@@ -4,77 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About — Funny Galore</title>
-<meta name="description" content="The story of Sima&#x27;s Funny Galore Comedy Club in Emmarentia, Johannesburg.">
+<meta name="description" content="The story of Sima's Funny Galore Comedy Club, Emmarentia, Johannesburg.">
 <meta name="theme-color" content="#0e0d0c">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="https://magenta-marten-362724.hostingersite.com/_astro/logo-badge.Dc95VE8l_Z24cxw.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="badge">SFG</span><span>Sima's Funny Galore<small>Comedy Club · Johannesburg</small></span></a>
-    <nav class="main" id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="shows.html">Shows</a></li><li><a href="pictures.html">Pictures</a></li><li><a href="videos.html">Videos</a></li><li><a href="wall-of-fame.html">Wall of Fame</a></li><li><a href="about.html" class=active>About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-    <div class="header-actions">
-      <a class="icon-btn hide-mobile" href="https://www.instagram.com/simasfunnygalorecomedyclub/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-      </a>
-      <a class="btn btn-red btn-sm" href="https://www.webtickets.co.za/" target="_blank" rel="noopener">Tickets</a>
-      <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+<header class="site-nav">
+  <div class="site-nav__bar container">
+    <a class="brand" href="index.html" aria-label="Sima's Funny Galore Comedy Club"><img src="https://magenta-marten-362724.hostingersite.com/_astro/logo-badge.Dc95VE8l_Z24cxw.webp" alt=""><span class="brand__word"><small>Sima's</small>Funny Galore</span></a>
+    <nav aria-label="Main"><ul class="site-nav__links"><li><a href="index.html">Home</a></li><li><a href="shows.html">Shows</a></li><li><a href="pictures.html">Pictures</a></li><li><a href="videos.html">Videos</a></li><li><a href="wall-of-fame.html">Wall of Fame</a></li><li><a href="about.html" aria-current=page>About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="site-nav__actions">
+      <a class="icon-btn" href="https://www.instagram.com/simasfunnygalorecomedyclub/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      <a class="btn btn--pill btn--sm" href="https://www.webtickets.co.za/" target="_blank" rel="noopener">Tickets</a>
+      <button class="site-nav__burger" aria-label="Menu" aria-expanded="false" onclick="const o=document.getElementById('ov');o.classList.toggle('is-open');this.setAttribute('aria-expanded',o.classList.contains('is-open'))"><span></span><span></span><span></span></button>
     </div>
   </div>
+  <div class="site-nav__overlay" id="ov"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="pictures.html">Pictures</a><a href="videos.html">Videos</a><a href="wall-of-fame.html">Wall of Fame</a><a href="about.html" aria-current=page>About</a><a href="contact.html">Contact</a><a class="btn" href="https://www.webtickets.co.za/" target="_blank" rel="noopener" style="border:0">Buy Tickets</a><a href="https://www.instagram.com/simasfunnygalorecomedyclub/" target="_blank" rel="noopener" style="border:0;font:600 .9rem/1 var(--f-body);text-transform:none;color:var(--gold)">@simasfunnygalorecomedyclub</a></div>
 </header>
 <main>
-<div class="page-hero"><div class="wrap"><div class="eyebrow">About</div><h1>A comedy club, on purpose</h1><p>A brick-walled, red-curtained room in Emmarentia built for one thing: people watching stand-up, up close.</p></div></div>
-<section>
-  <div class="wrap two">
-    <div>
-      <div class="eyebrow">The room</div>
-      <h2>Nowhere to hide</h2>
-      <p>111 Lotsani Lane is a low-ceilinged room with exposed brick, heavy red curtains and a tufted panel behind the mic. It holds roughly 90 people — close enough that the audience and the comic are in it together.</p>
-      <div class="eyebrow" style="margin-top:36px">In Sima's words</div>
-      <blockquote>"A theatre is too formal, a bar is too loud. This room sits right in the middle — intimate, intentional, and honest about the fact that comedy is a live sport."<cite>Sima Chikavhu, founder &amp; host</cite></blockquote>
-      <p class="muted" style="margin-top:20px">Sima is a comedian and promoter with years on the Johannesburg circuit. The challenge she set herself: fill a small room 150-plus nights a year, keep the pricing fair, and put emerging talent next to established headliners every single week.</p>
-    </div>
-    <div class="photo-stack">
-      <div class="ph wide" style="--c1:#7a0e1a;--c2:#c8202f;--c3:#e6338f"><span class=tag>Venue</span><span class="mic"></span><div class="label">Two comedians, one backdrop</div></div>
-      <div class="ph square" style="--c1:#2b0b3b;--c2:#6b1fa8;--c3:#c8202f"><span class=tag>Venue</span><span class="mic"></span><div class="label"><small>Filming on stage</small>Behind the scenes</div></div>
-      <div class="ph square" style="--c1:#3b0a3a;--c2:#8a1e7a;--c3:#e6338f"><span class=tag>Founder</span><span class="mic"></span><div class="label"><small>Interview still</small>Sima</div></div>
-    </div>
+<section class="page-head on-char"><div class="container container--narrow"><p class="eyebrow">About</p><h1 class="display fx-split">A comedy club, on purpose</h1><p class="lead">Sima's Funny Galore is a brick-walled, red-curtained room in Emmarentia built for one thing: people watching stand-up, up close.</p></div></section>
+<section class="section on-cream">
+  <div class="container split">
+    <div><h2 class="display fx-split">The room</h2>
+      <p>Downstairs at 111 Lotsani Lane you'll find low ceilings, exposed brick, heavy red curtains and a tufted panel behind the mic. It holds about 90 people, which means there's nowhere to hide — for the audience or the comic.</p>
+      <p>That's the point. A theatre is too formal and a bar is too loud. This room sits in between: intimate, intentional, and built so the punchline lands on everyone at once.</p></div>
+    <div class="photo"><img src="https://magenta-marten-362724.hostingersite.com/_astro/photo_venue_two-comedians-backdrop.BqZZn9Xm_27gCMJ.webp" alt="Two comedians in front of the Funny Galore backdrop" loading="lazy"></div>
   </div>
 </section>
-<section style="background:var(--bg2);border-top:1px solid var(--line)">
-  <div class="wrap">
-    <div class="section-head"><div><div class="eyebrow">What happens here</div><h2>The weekly shape of things</h2></div></div>
-    <div class="grid grid-3">
-      <div class="info"><h3>Saturday &amp; Sunday Comedy Nights</h3><p>Hosted by Sima. A rotating surprise line-up, show at 7:00 PM.</p></div>
-      <div class="info"><h3>Friday Open Mic Competition</h3><p>Ten comedians, one audience vote, R1000 cash for the winner.</p></div>
-      <div class="info"><h3>Headline specials</h3><p>Established and international comedians throughout the month.</p></div>
-    </div>
+<section class="section on-char">
+  <div class="container split">
+    <div class="photo"><img src="https://magenta-marten-362724.hostingersite.com/_astro/photo_sima-interview_v2.BwbvVrAA_19T98S.webp" alt="Sima Chikavhu" loading="lazy"></div>
+    <div><p class="eyebrow">In Sima's words</p><h2 class="display fx-split">The interview</h2>
+      <p>Sima is a comedian and promoter with years on the Johannesburg circuit, and the club is built around one belief: intimacy and intent. A theatre is too formal, a bar is too loud — this room sits in between.</p>
+      <p>The hard part, in Sima's telling, is filling a small room 150-plus nights a year while keeping pricing fair for the crowd and the comics. The answer is the weekly rhythm: established headliners trying new material next to emerging acts, every single week.</p>
+      <p style="margin-top:8px"><a class="btn btn--ghost" href="videos.html"><span>Watch the interview</span></a></p></div>
   </div>
 </section>
-
+<section class="section on-cream">
+  <div class="container"><h2 class="display fx-split" style="margin-bottom:32px">What happens here</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Saturday &amp; Sunday Comedy Nights</h3><p>Hosted by Sima. A surprise line-up every weekend, show at 7:00 PM.</p><a class="link" href="shows.html#weekly">See the nights →</a></div>
+      <div class="info"><h3>Friday Open Mic Competition</h3><p>Ten comedians, one audience vote, R1000 cash for the winner.</p><a class="link" href="shows.html#weekly">How it works →</a></div>
+      <div class="info"><h3>Headline specials</h3><p>Established and international comedians throughout the month.</p><a class="link" href="shows.html">What's on →</a></div>
+    </div></div>
+</section>
 </main>
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="index.html"><span class="badge">SFG</span><span>Sima's Funny Galore<small>Comedy Club</small></span></a>
-        <p class="muted" style="margin-top:14px;max-width:340px">Johannesburg's home of live stand-up comedy.</p>
-      </div>
-      <div><h4>Visit</h4><p class="muted">111 Lotsani Lane<br>Emmarentia, Randburg<br>Johannesburg 2195</p></div>
-      <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="shows.html">Shows</a></li><li><a href="pictures.html">Pictures</a></li><li><a href="videos.html">Videos</a></li><li><a href="wall-of-fame.html">Wall of Fame</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Follow &amp; Book</h4><ul>
-        <li><a href="https://www.instagram.com/simasfunnygalorecomedyclub/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.webtickets.co.za/" target="_blank" rel="noopener">Webtickets</a></li>
-      </ul></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div><img src="https://magenta-marten-362724.hostingersite.com/_astro/logo-badge.Dc95VE8l_Z24cxw.webp" alt="Sima's Funny Galore Comedy Club"><p class="site-footer__tag">Johannesburg's home of live stand-up comedy.</p></div>
+      <div><h2>Visit</h2><p>111 Lotsani Lane<br>Emmarentia, Randburg<br>Johannesburg 2195</p></div>
+      <div><h2>Pages</h2><ul><li><a href="index.html">Home</a></li><li><a href="shows.html">Shows</a></li><li><a href="pictures.html">Pictures</a></li><li><a href="videos.html">Videos</a></li><li><a href="wall-of-fame.html">Wall of Fame</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2>Follow &amp; book</h2><a class="btn btn--outline-gold" href="https://www.instagram.com/simasfunnygalorecomedyclub/" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> Follow on Instagram</a><p style="margin-top:14px;font-size:.85rem"><a href="https://www.webtickets.co.za/" target="_blank" rel="noopener">Tickets via Webtickets</a></p></div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 Sima's Funny Galore Comedy Club. All rights reserved.</span>
-      <span>Tickets sold through Webtickets. Line-ups &amp; dates subject to change.</span>
-    </div>
+    <div class="site-footer__bottom"><span>© 2026 Sima's Funny Galore Comedy Club. All rights reserved.</span><span>Tickets sold through Webtickets. Line-ups &amp; dates subject to change.</span></div>
   </div>
 </footer>
+<script>
+// letter-reveal headings: split text into per-character spans, reveal on scroll
+document.querySelectorAll('.fx-split').forEach(h=>{const t=h.textContent.trim();let i=0;h.innerHTML='<span class="sr-only">'+t.replace(/</g,'&lt;')+'</span>'+t.split(' ').map(w=>'<span style="display:inline-block;white-space:nowrap" aria-hidden="true">'+[...w].map(c=>'<span class="ch" style="--i:'+(i++)+'">'+c.replace(/</g,'&lt;')+'</span>').join('')+'</span>'+(i++,'')).join(' ')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-revealed');io.unobserve(e.target)}}),{threshold:.3});
+document.querySelectorAll('.fx-split').forEach(h=>{if(h.classList.contains('is-revealed'))return;io.observe(h)});
+</script>
 </body>
 </html>
